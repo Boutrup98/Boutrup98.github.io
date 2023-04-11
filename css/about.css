@@ -1,0 +1,99 @@
+/* About section */
+.about-section {
+    padding-top: 150px;
+    height: 100%;
+}
+
+.section-heading {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.about-section-text {
+    width: 60%;
+}
+
+.about-section-text p {
+    font-size: 38px;
+    letter-spacing: -1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* Experiences section */
+.experiences-section {
+    padding-top: 150px;
+    height: 100%;
+}
+
+.column-section {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.c1, .c2 {
+    flex: 1 1 0px;
+}
+
+.experience {
+    margin-bottom: 50px;
+}
+
+.experience h3 {
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.experience p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Work section */
+.work-section {
+    padding-top: 150px;
+    height: 100%;
+}
+
+
+/* Talk section */
+.talk-section {
+    padding-top: 150px;
+    height: 100%;
+}
+
+.c2 img {
+    width: 100%;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1250px) {
+
+}
+
+@media screen and (max-width: 950px) {
+    .c1, .c2 {
+        flex: 0 0 0px;
+    }
+
+    .column-section {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .about-section-text {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}

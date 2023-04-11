@@ -1,0 +1,239 @@
+/* MAIN CSS */
+
+
+/* Variables */
+:root {
+    --main-color: #A4ABB8;
+    --secondary-color: #ffffff;
+    --main-font: aktiv-grotesk, sans-serif;
+}
+
+
+/* Highlight color */
+::selection {
+    background: var(--secondary-color);
+    color: var(--main-color); 
+}
+
+
+/* Main html */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Main body */
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    font-family: var(--main-font);
+    font-style: normal; 
+}
+
+
+/* Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+  
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    transition: 0.3s;
+    right: 20px;
+}
+  
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 108px;
+    color: var(--main-color);
+    display: block;
+    transition: 0.3s;
+    padding-left: 100px;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    opacity: 15%;
+}
+
+#work .work, #about .about, #journal .journal, #labs .labs {
+    opacity: 15%;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .overlay a {
+        font-size: 80px
+    }
+}
+
+
+/* Navbar */
+.logo-nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    transition: 0.3s;
+}
+
+.menu-nav span {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 38px !important;
+    font-weight: 200;
+    letter-spacing: -1px;
+    transition: 0.3s;
+}
+
+.menu-nav div {
+    display: none;
+    float: right;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.top-nav {
+    top: 28px;
+    z-index: 2;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.3s;
+}
+
+.logo-nav {
+    float: left;
+}
+
+.menu-nav {
+    position: fixed;
+    right: 27px;
+    transition: 0.3s;
+}
+
+h1 {
+    font-size: 105px;
+    font-weight: 200;
+    margin: 0px;
+    line-height: 115px;
+    letter-spacing: -2px;
+}
+
+
+/* Footer */
+.footer-mail p {
+    font-size: 105px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.footer-mail a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.footer-mail {
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.footer-main {
+    height: 100px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    width: 400px;
+}
+
+.footer-text p {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.footer-links {
+    width: 100px;
+    max-width: 50px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: -0.5px;
+}
+
+.dark-mode p {
+    float: right;
+}
+
+.footer-button {
+    float: right;
+}
+
+.footer-button img {
+    float: right;
+    transform: rotate(180deg);
+    margin-top: 60px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1250px) {
+    .footer-mail p {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .footer-mail p {
+        font-size: 22px;
+    }
+
+    .footer-button img {
+        margin-top: 160px;
+        margin-bottom: 60px;
+    }
+
+    #footerButton:hover #footerButtonImg {
+        opacity: 70% !important;
+        transition: 0.3s;
+    }
+
+    .footer-main {
+        height: 220px;
+    }
+}

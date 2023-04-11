@@ -1,1 +1,123 @@
-"Hello World"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bai8jiy.css">
+    <script src="/js/menu.js"></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+            $("#footer").load("/elements/footer.html");
+            $("#header").load("/elements/header.html");
+        }); 
+    </script> 
+
+    <title>Portfolio</title>
+</head>
+<body id="work">
+    
+    <!-- Curser -->
+    <script type="text/javascript">
+        options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "circle-move",
+        "hoverItemMove": true,
+        "defaultCursor": true,
+        "outerWidth": 50,
+        "outerHeight": 50
+        }; 
+        magicMouse(options);
+    </script>
+
+    <!-- Header -->
+    <div id="header"></div> 
+
+    <!-- Hero section -->
+    <div id="heroSection" class="hero-section">
+        <div class="hero-text">
+            <h1>Digital product designer based in Denmark.</h1>
+        </div>
+        <div class="hero-button">
+            <a id="heroButton" href="#projectsSection">
+                <p>Featured projects</p>
+                <img id="heroButtonImg" src="/library/Arrow.svg" alt="arrow">
+            </a>
+        </div>
+    </div>
+
+    <!-- Projekt section -->
+    <div id="projectsSection" class="projects-section">
+        <div style="flex-grow: 20">
+            <a href="/work/fenerum.html">
+                <div class="project-img-b"></div>
+                <div>
+                    <p class="project-text">Brand & Product Design</p>
+                    <h2>Redesign of a major SaaS service</h2>
+                </div>
+                <div class="project-button">
+                    <a id="projectButton" href="/work/fenerum.html">
+                        <img id="projectButtonImg" src="/library/Arrow.svg" alt="arrow">
+                        <p>View case</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <div class="box-sm" style="flex-grow: 1">
+            <a href="/work/social-educators.html">
+                <div class="project-img-s"></div>
+                <div>
+                    <p class="project-text">Brand Design & Identity</p>
+                    <h2>Brand identity for the world congress of social educators</h2>
+                </div>
+                <div class="project-button">
+                    <a id="projectButton" href="/work/social-educators.html">
+                        <img id="projectButtonImg" src="/library/Arrow.svg" alt="arrow">
+                        <p>View case</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="projects-section">
+        <div class="box-sm" style="flex-grow: 1">
+            <a href="/work/daloon.html">
+                <div class="project-img-s2"></div>
+                <div>
+                    <p class="project-text">Web & Digital Design</p>
+                    <h2>Modern digital redesign of Daloon</h2>
+                </div>
+                <div class="project-button">
+                    <a id="projectButton" href="/work/daloon.html">
+                        <img id="projectButtonImg" src="/library/Arrow.svg" alt="arrow">
+                        <p>View case</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <div style="flex-grow: 20">
+            <a href="">
+                <div class="project-img-b2"></div>
+                <div>
+                    <p class="project-text">Branding & Product Design</p>
+                    <h2>Digital refresh for Denmarks top ferry service</h2>
+                </div>
+                <div class="project-button">
+                    <a id="projectButton" href="">
+                        <img id="projectButtonImg" src="/library/Arrow.svg" alt="arrow">
+                        <p>View case</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div> 
+
+</body>
+</html>

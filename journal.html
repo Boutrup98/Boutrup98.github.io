@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/journal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bai8jiy.css">
+    <script src="/js/menu.js"></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+            $("#footer").load("/elements/footer.html");
+            $("#header").load("/elements/header.html");
+        }); 
+    </script> 
+    
+    <title>Portfolio</title>
+</head>
+<body id="journal">
+
+    <!-- Curser -->
+    <script type="text/javascript">
+        options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "pointer-blur",
+        "hoverItemMove": false,
+        "defaultCursor": true,
+        "outerWidth": 50,
+        "outerHeight": 50
+        }; 
+        magicMouse(options);
+    </script>
+
+    <!-- Header -->
+    <div id="header"></div> 
+
+    <!-- Heading section -->
+    <div id="aboutSection" class="about-section">
+        <div class="section-heading">
+            <h1>Journal</h1>
+        </div>
+        <div class="about-section-text">
+            <p>Coming soon</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div> 
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Heading section */
+.about-section {
+    padding-top: 150px;
+    height: 100%;
+}
+
+.section-heading {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.about-section-text {
+    width: 60%;
+}
+
+.about-section-text p {
+    font-size: 38px;
+    letter-spacing: -1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 60px;
+    }
+}
